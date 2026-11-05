@@ -1,0 +1,9 @@
+_archiwum_robocze/
+_DO_USUNIECIA/
+_formalnosci_etap1_archive/
+__pycache__/
+.pytest_cache/
+.agents/
+genmap_data/
+scripts/
+*.pyc
