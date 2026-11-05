@@ -5404,6 +5404,22 @@
   }
 
   window.addEventListener("DOMContentLoaded", () => {
+    // Backdrop click to close modals
+    document.querySelectorAll('.modal-backdrop').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+      });
+    });
+
+    // Escape key to close modals
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-backdrop.active').forEach(modal => {
+          modal.classList.remove('active');
+        });
+      }
+    });
+
     fetchLiveTelemetry();
     if (!livePollTimer) livePollTimer = setInterval(fetchLiveTelemetry, 5000);
     setInterval(() => {
