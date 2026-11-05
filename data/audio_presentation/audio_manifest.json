@@ -1,0 +1,75 @@
+{
+  "total_duration": 492.885261,
+  "chapters": [
+    {
+      "id": "ch01_intro",
+      "title": "Rozdział 1: Wprowadzenie i Misja Kraków SmartGrid",
+      "filename": "ch01_intro.mp3",
+      "duration": 31.29746,
+      "text": "Dzień dobry. Nazywam się Emil Oleksy, jestem absolwentem Akademii Górniczo-Hutniczej w Krakowie i koordynatorem projektu Kraków SmartGrid. Wraz z Mają Majchrzak przygotowaliśmy kompleksowe rozwiązanie dla oficjalnego konkursu Open Data App, organizowanego przez Urząd Miasta Krakowa. Nasz system rozwiązuje jeden z najbardziej krytycznych problemów współczesnej transformacji energetycznej Krakowa: bilansowanie energii dla flot miejskich autobusów elektrycznych na Zajezdni Wola Duchacka."
+    },
+    {
+      "id": "ch02_problem_szczytu",
+      "title": "Rozdział 2: Geneza Problemu – Wieczorny Szczyt Mocy MPK",
+      "filename": "ch02_problem_szczytu.mp3",
+      "duration": 55.841814,
+      "text": "Kraków jest liderem elektromobilności w Polsce, posiadając sto dwadzieścia jeden zeroemisyjnych autobusów elektrycznych stacjonujących na Zajezdni Wola Duchacka przy ulicy Walerego Sławka dziesięć. Infrastruktura ładowania obejmuje sto siedemnaście stanowisk pantografowych i wtykowych o łącznej mocy wielu megawatów. Problem fizyczny i sieciowy pojawia się wieczorem, między godziną dwudziestą pierwszą a dwudziestą drugą trzydzieści. Wtedy autobusy po całym dniu pracy na liniach sto sześćdziesiąt cztery, sto sześćdziesiąt dziewięć czy sto siedemdziesiąt cztery zjeżdżają niemal jednocześnie do bazy z rozładowanymi bateriami. Równoczesne podłączenie ładowarek wywołuje gwałtowny skok zapotrzebowania na moc, osiągający aż pięć i cztery setne megawata. Jest to aż dziewięćdziesiąt siedem procent maksymalnej mocy przyłącza ze stacji GPZ Kurdwanów, co grozi przeciążeniem transformatorów i awarią sieci."
+    },
+    {
+      "id": "ch03_anatomic_kosztow",
+      "title": "Rozdział 3: Dlaczego ten szczyt niszczy budżet MPK? Taryfy i URE",
+      "filename": "ch03_anatomic_kosztow.mp3",
+      "duration": 63.005986,
+      "text": "Dlaczego ten półtoragodzinny szczyt jest tak kosztowny dla miasta? Odpowiedź tkwi w mechanizmach taryfowych. Po pierwsze, w taryfie dystrybucyjnej Tauron B23 dla średniego napięcia, MPK płaci miesięczną opłatę stałą za moc zamówioną, wynoszącą ponad dwadzieścia jeden złotych za każdy kilowat. Moc zamówioną trzeba utrzymywać przez cały rok pod kątem tego jednego najwyższego kwadransa w roku. Po drugie, Ustawa o rynku mocy nakłada opłatę mocową Urzędu Regulacji Energetyki. W roku dwa tysiące dwudziestym szóstym stawka wynosi aż dwieście dziewiętnaście złotych i czterdzieści groszy za megawatogodzinę. Kluczowe jest to, że opłata mocowa obowiązuje w dni robocze od siódmej rano do dwudziestej drugiej w nocy. Wieczorny szczyt zjazdów między dwudziestą pierwszą a dwudziestą drugą trafia dokładnie w to płatne okno. Po trzecie, energia na giełdzie w nocy kosztuje około trzysta osiemdziesiąt złotych za megawatogodzinę, a w szczycie wieczornym ponad siedemset dwadzieścia złotych."
+    },
+    {
+      "id": "ch04_rozwiazanie_bess",
+      "title": "Rozdział 4: Inżynierskie Rozwiązanie – Magazyn BESS Behind-the-Meter",
+      "filename": "ch04_rozwiazanie_bess.mp3",
+      "duration": 49.504172,
+      "text": "Naszym rozwiązaniem jest wielkoskalowy bateryjny magazyn energii o mocy dwóch megawatów i pojemności czterech megawatogodzin w bezpiecznej chemii litowo-żelazowo-fosforanowej. Magazyn instalujemy w formule Behind-the-Meter, czyli za licznikiem rozliczeniowym MPK, bezpośrednio na szynach wewnętrznej rozdzielnicy piętnaście kilowoltów. Zgodnie z artykułem czterdzieści trzy g Prawa Energetycznego, instalacja magazynu za licznikiem nie wymaga koncesji Prezesa Urzędu Regulacji Energetyki na dystrybucję ani wieloletnich procedur z operatorem. Algorytm Peak Shaving o godzinie dwudziestej pierwszej uruchamia rozładowanie magazynu z mocą jednego i trzydziestu siedmiu megawata. W efekcie pobór z sieci Tauron spada z pięciu i czterech setnych megawata do bezpiecznego poziomu trzech i sześćdziesięciu siedmiu megawata."
+    },
+    {
+      "id": "ch05_finanse_i_filary",
+      "title": "Rozdział 5: Trzy Filary Finansowe i Zwrot z Inwestycji",
+      "filename": "ch05_finanse_i_filary.mp3",
+      "duration": 57.046984,
+      "text": "Efektem pracy magazynu jest udokumentowana oszczędność siedmiuset dziewięćdziesięciu pięciu tysięcy siedmiuset dwudziestu jeden złotych rocznie. Wynika ona z trzech precyzyjnie wyliczonych filarów. Filar pierwszy to redukcja mocy zamówionej B23 o jeden i trzydzieści siedem megawata, co daje trzysta czterdzieści pięć tysięcy złotych rocznie. Filar drugi to uniknięcie opłaty mocowej URE w oknie wieczornym, co przynosi sto czterdzieści siedem tysięcy osiemset złotych. Filar trzeci to arbitraż cenowy: ładowanie magazynu tanią energią w nocy i rozładowanie w drogim szczycie, co daje trzysta dwa tysiące pięćset złotych rocznie. Koszt inwestycji wynosi trzy miliony osiemset tysięcy złotych. Przy siedemdziesięcioprocentowej dotacji z programu FEnIKS wkład własny Krakowa to jeden milion sto czterdzieści tysięcy złotych, który zwraca się w zaledwie jeden i cztery dziesiąte roku, czyli w siedemnaście miesięcy."
+    },
+    {
+      "id": "ch06_konsola_scada_wykres",
+      "title": "Rozdział 6: Panel Dyspozytorski SCADA – Analiza Wykresu Dobowego",
+      "filename": "ch06_konsola_scada_wykres.mp3",
+      "duration": 53.223265,
+      "text": "Przejdźmy teraz do naszej konsoli dyspozytorskiej SCADA. Na dole ekranu znajduje się interaktywny wykres dobowy podzielony na dziewięćdziesiąt sześć kwadransów. Czerwona linia i czerwone pole pokazują pierwotny pobór mocy z sieci bez magazynu. Wyraźnie widać gwałtowny skok do pięciu i czterech setnych megawata o godzinie dwudziestej pierwszej trzydzieści. Zielona linia reprezentuje zoptymalizowany pobór mocy z aktywnym systemem SmartGrid. Szczyt zostaje ścięty płasko do poziomu trzech i sześćdziesięciu siedmiu megawata. Różnica między czerwoną a zieloną linią to energia dostarczona przez baterię. Błękitna linia przerywana to stan naładowania magazynu. Widzimy, jak bateria ładuje się nocą w godzinach od pierwszej do piątej rano, a wieczorem oddaje energię, zachowując bezpieczną dwudziestoprocentową rezerwę."
+    },
+    {
+      "id": "ch07_telemetria_i_degradacja",
+      "title": "Rozdział 7: Telemetria Ogniw LFP i Model Degradacji 15 Lat",
+      "filename": "ch07_telemetria_i_degradacja.mp3",
+      "duration": 49.793333,
+      "text": "W prawym panelu konsoli SCADA monitorujemy fizyczne parametry magazynu energii. Okrągły wskaźnik zegarowy pokazuje bieżący stan naładowania baterii oraz aktualną moc falownika. Poniżej widzimy sprawność cyklu ładowania i rozładowania wynoszącą osiemdziesiąt osiem procent, współczynnik mocy cosinus fi na poziomie zero dziewięćdziesiąt dziewięć oraz temperaturę ogniw dwadzieścia cztery i sześć dziesiątych stopnia Celsjusza. Zastosowana technologia litowo-żelazowo-fosforanowa jest bezpieczna i odporna na ucieczkę termiczną aż do dwustu siedemdziesięciu stopni Celsjusza. Co kluczowe, zgodnie z fizykochemicznym modelem degradacji Eckera, po piętnastu latach intensywnej eksploatacji bateria zachowuje ponad osiemdziesiąt jeden procent pierwotnej pojemności, co gwarantuje długowieczność inwestycji."
+    },
+    {
+      "id": "ch08_stress_testy_i_microgrid",
+      "title": "Rozdział 8: Testy Odporności – Zima, Dunkelflaute i Tryb Wyspowy Microgrid",
+      "filename": "ch08_stress_testy_i_microgrid.mp3",
+      "duration": 46.554467,
+      "text": "W lewym panelu dyspozytorskim zaimplementowaliśmy symulator pięciu scenariuszy kryzysowych. W scenariuszu Zimy Stulecia przy temperaturze minus piętnaście stopni Celsjusza, zużycie energii na ogrzewanie autobusów rośnie o czterdzieści dwa procent. System natychmiast adaptuje harmonogram rozładowania, chroniąc sieć przed przekroczeniem mocy. Najważniejszy jest jednak scenariusz Awarii GPZ Kurdwanów. W przypadku całkowitego blackoutu w południowym Krakowie, magazyn w ułamku sekundy przełącza się w tryb wyspowy microgrid. Dzięki czterem megawatogodzinom energii zapewnia niemal pięć godzin podtrzymania zasilania dla infrastruktury krytycznej zajezdni, w tym dla dyspozytorni MPK oraz miejskiej łączności radiowej TETRA."
+    },
+    {
+      "id": "ch09_otwarte_dane_podsumowanie",
+      "title": "Rozdział 9: Rygor Otwartych Danych i Podsumowanie Korzyści",
+      "filename": "ch09_otwarte_dane_podsumowanie.mp3",
+      "duration": 42.694649,
+      "text": "Wszystkie obliczenia i wizualizacje opierają się na autentycznych otwartych danych. Wykorzystaliśmy rozkłady jazdy ZTP w formacie GTFS dla krakowskich linii autobusowych, warstwy przestrzenne Miejskiego Systemu Informacji Przestrzennej Krakowa, rzeczywiste piętnastominutowe profile rynkowe Polskich Sieci Elektroenergetycznych oraz zatwierdzone taryfy Tauron i Urzędu Regulacji Energetyki. Kraków SmartGrid to kompletne, przetestowane i dojrzałe inżyniersko rozwiązanie, które przynosi miastu oszczędności finansowe, stabilność sieci i realne bezpieczeństwo energetyczne. Dziękuję za uwagę i zapraszam do zapoznania się z pełną dokumentacją oraz interaktywną konsolą SCADA."
+    },
+    {
+      "id": "ch10_wideo_tutorial",
+      "title": "Rozdział 10: Wideo-Tutorial SCADA i Werdykt Wdrożeniowy",
+      "filename": "ch10_wideo_tutorial.mp3",
+      "duration": 43.919637,
+      "text": "Dotarliśmy do podsumowania naszej prezentacji. Kraków SmartGrid to kompletny projekt przygotowany dla Krakowa. Poniżej mogą Państwo obejrzeć pełnometrażowy wideo-tutorial rejestrujący pracę na żywej konsoli dyspozytorskiej SCADA, ze szczegółowym przejściem przez wszystkie ekrany, wykresy i scenariusze awaryjne. Projekt opiera się w stu procentach na faktach: przynosi miastu siedemset dziewięćdziesiąt pięć tysięcy złotych oszczędności rocznie, zwraca się w zaledwie siedemnaście miesięcy dzięki dotacji z programu FEnIKS i gwarantuje stabilność miejskiej sieci elektroenergetycznej. Dziękujemy Kapitule Konkursu Open Data App za uwagę i zapraszamy do interaktywnego przetestowania naszej aplikacji na żywo."
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "type": "FeatureCollection",
+  "name": "Krakow_EcoGrid_Base_GIS",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rzeka Wisła",
+        "category": "waterway",
+        "type": "river",
+        "length_km": 14.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.7825,
+            50.0524
+          ],
+          [
+            19.8245,
+            50.0524
+          ],
+          [
+            19.8595,
+            50.0533
+          ],
+          [
+            19.8875,
+            50.0538
+          ],
+          [
+            19.9085,
+            50.0542
+          ],
+          [
+            19.9254,
+            50.0544
+          ],
+          [
+            19.9352,
+            50.0535
+          ],
+          [
+            19.9408,
+            50.0513
+          ],
+          [
+            19.9478,
+            50.0493
+          ],
+          [
+            19.9534,
+            50.049
+          ],
+          [
+            19.9576,
+            50.0495
+          ],
+          [
+            19.9618,
+            50.0506
+          ],
+          [
+            19.9674,
+            50.0526
+          ],
+          [
+            19.973,
+            50.053
+          ],
+          [
+            19.988,
+            50.052
+          ],
+          [
+            20.012,
+            50.049
+          ],
+          [
+            20.038,
+            50.045
+          ],
+          [
+            20.068,
+            50.042
+          ],
+          [
+            20.105,
+            50.039
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Planty Krakowskie",
+        "category": "greenery",
+        "area_ha": 21.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.9366,
+              50.0654
+            ],
+            [
+              19.9408,
+              50.0642
+            ],
+            [
+              19.9426,
+              50.0618
+            ],
+            [
+              19.9416,
+              50.0588
+            ],
+            [
+              19.9388,
+              50.0564
+            ],
+            [
+              19.936,
+              50.0548
+            ],
+            [
+              19.9332,
+              50.056
+            ],
+            [
+              19.9312,
+              50.0588
+            ],
+            [
+              19.9316,
+              50.0624
+            ],
+            [
+              19.9338,
+              50.0648
+            ],
+            [
+              19.9366,
+              50.0654
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Błonia Krakowskie",
+        "category": "greenery",
+        "area_ha": 48.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.8834,
+              50.0641
+            ],
+            [
+              19.9198,
+              50.0632
+            ],
+            [
+              19.9226,
+              50.056
+            ],
+            [
+              19.8862,
+              50.056
+            ],
+            [
+              19.8834,
+              50.0641
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wzgórze Wawelskie & Zamek Królewski",
+        "category": "landmark",
+        "type": "historic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.933,
+              50.0552
+            ],
+            [
+              19.937,
+              50.0552
+            ],
+            [
+              19.938,
+              50.0532
+            ],
+            [
+              19.934,
+              50.053
+            ],
+            [
+              19.933,
+              50.0552
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zalew Zakrzówek",
+        "category": "water_body"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.912,
+              50.04
+            ],
+            [
+              19.918,
+              50.04
+            ],
+            [
+              19.919,
+              50.036
+            ],
+            [
+              19.913,
+              50.036
+            ],
+            [
+              19.912,
+              50.04
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zalew Bagry (Płaszów)",
+        "category": "water_body"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.99,
+              50.036
+            ],
+            [
+              20.002,
+              50.036
+            ],
+            [
+              20.003,
+              50.031
+            ],
+            [
+              19.991,
+              50.031
+            ],
+            [
+              19.99,
+              50.036
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DEP-01",
+        "name": "Zajezdnia Wola Duchacka",
+        "type": "EV Depot",
+        "capacity_mwh": 6.0,
+        "power_mw": 2.5,
+        "chargers": 52
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9575,
+          50.0185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DEP-02",
+        "name": "Zajezdnia Płaszów",
+        "type": "EV Depot",
+        "capacity_mwh": 3.5,
+        "power_mw": 1.5,
+        "chargers": 28
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.988,
+          50.0385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DEP-03",
+        "name": "Zajezdnia Bieńczyce",
+        "type": "EV Depot",
+        "capacity_mwh": 2.5,
+        "power_mw": 1.0,
+        "chargers": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.037,
+          50.0862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DEP-04",
+        "name": "Zajezdnia Tramwajowa Podgórze",
+        "type": "Tram Substation",
+        "capacity_mwh": 4.0,
+        "power_mw": 2.0,
+        "chargers": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.932,
+          50.023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "DEP-05",
+        "name": "Zajezdnia Tramwajowa Nowa Huta",
+        "type": "Tram Substation",
+        "capacity_mwh": 3.0,
+        "power_mw": 1.5,
+        "chargers": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.078,
+          50.0712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HUB-01",
+        "name": "Pętla Krowodrza Górka",
+        "type": "Pantograph Hub",
+        "capacity_mwh": 2.0,
+        "power_mw": 1.0,
+        "chargers": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.928,
+          50.089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HUB-02",
+        "name": "Pętla Nowy Kleparz",
+        "type": "Pantograph Hub",
+        "capacity_mwh": 1.5,
+        "power_mw": 0.8,
+        "chargers": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.936,
+          50.0735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HUB-03",
+        "name": "Pętla Osiedle Kurdwanów",
+        "type": "Pantograph Hub",
+        "capacity_mwh": 1.5,
+        "power_mw": 0.8,
+        "chargers": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952,
+          50.0125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HUB-04",
+        "name": "Pętla Szpital Rydygiera",
+        "type": "Pantograph Hub",
+        "capacity_mwh": 1.0,
+        "power_mw": 0.5,
+        "chargers": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.016,
+          50.091
+        ]
+      }
+    }
+  ]
+}
