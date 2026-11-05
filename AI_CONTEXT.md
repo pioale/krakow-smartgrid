@@ -11,12 +11,37 @@ Projekt łączy w sobie:
 ---
 
 ## 2. Obecny Stan Projektu
-- **Status Formalny:** **100% ZWERYFIKOWANY I ZAAKCEPTOWANY.** W dniu 30.10.2026 r. o godz. 13:36 wpłynęło oficjalne potwierdzenie od p. Karoliny Grzanki (Referat ds. Smart City i analizy danych UMK): zespół SmartGrid Kraków (Emil Oleksy, Maja Majchrzak) został formalnie dopuszczony do I etapu konkursu.
-- **Termin Zgłoszenia Etapu I:** **05.11.2026 r., godz. 23:59 CET** mailem na adres `konkursopendata@um.krakow.pl`.
-- **Stan Kodu i Testów:** **VICTORY CONFIRMED (200/200 TESTÓW ZIELONYCH: 147 pytest + 53 testy adwersarskie i sieciowe w 100% PASS).**
-- **Wizualna Architektura:** Całkowite wycofanie MapLibre GIS i zmyślonych geometrii. Centralnym panelem jest Schemat Jednokreskowy SN/nN (SLD SCADA) z dynamicznymi wektorami przepływu mocy ($P_{grid} + P_{bess} = P_{load}$) oraz Executive Cockpit (wykresy 24h, taryfy Tauron B23 i URE).
-- **Otwarte Dane UMK:** Autentyczne dane ze zbioru ZTP KMK (GTFS zjazdy na Wolę Duchacką) oraz API UMK zarejestrowanych pojazdów (1 626 autobusów).
-- **Workspace:** Zreorganizowany, krystalicznie czysty.
+- **Status Formalny:** **100% ZWERYFIKOWANY I ZAAKCEPTOWANY.** Zespół SmartGrid Kraków (inż. Emil Oleksy – Lider, AGH; Maja Majchrzak) dopuszczony do konkursu Open Data App (COI UMK).
+- **Publiczny Link Online (HTTPS - Zero Instalacji):** **https://pioale.github.io/krakow-smartgrid/** — oficjalna wersja w chmurze działająca na każdym urządzeniu (telefon, tablet, laptop, PC) bez konieczności uruchamiania Pythona ani localhosta.
+- **Silnik Czasu Rzeczywistego (Real-Time Live Open Data Stream):**
+  1. *ZTP Kraków GTFS-RT (`VehiclePositions.pb` & `TripUpdates.pb`):* strumień telemetrii na żywo (565+ aktywnych pojazdów w ruchu, monitorowanie zbliżania się do zajezdni w oknie zjazdów).
+  2. *IMGW Kraków-Balice API (`danepubliczne.imgw.pl`):* rzeczywista temperatura na żywo dynamicznie korygująca pobór mocy grzania/chłodzenia HVAC wg normy e-SORT (+25% przy temp. < 5°C).
+  3. *PSE S.A. / TGE RCE API (`api.raporty.pse.pl`):* rynkowe ceny energii bilansującej co 15 minut dla arbitrażu magazynowego.
+- **Skala Systemu (Dwa Poziomy):**
+  - *Obiekt Pilotażowy (Wola Duchacka):* 121 autobusów elektrycznych, 117 ładowarek, redukcja szczytu z 5.04 MW do 3.67 MW, **795 721 zł rocznych oszczędności** (zwrot 1.4 roku).
+  - *Agregacja Miejska (10 Hubów w Krakowie):* 3 bazy autobusowe (Wola Duchacka, Płaszów, Bieńczyce), 2 zajezdnie tramwajowe (Podgórze, Nowa Huta) oraz 5 pętli szybkiego ładowania (Dworzec Gł., Podwawelskie, Prądnik Biały itp.) — łączna moc 28.5 MW, **3 580 000 zł rocznych oszczędności dla budżetu Krakowa** (>50 mln zł w 15 lat).
+- **Interfejs SCADA:**
+  - Przełącznik trybów: `🔴 TRYB LIVE (CZAS RZECZYWISTY)` vs `⏱️ TRYB SYMULACJI (24H)`.
+  - Wyeliminowano całkowicie skakanie przycisków odtwarzacza na dole (`position: absolute; left: 50%; transform: translateX(-50%)`).
+  - Wyeliminowano ucinanie prawego przycisku na ekranach laptopów 1472px.
+- **Czystość Plików:**
+  - W folderze `0_DLA_CIEBIE_I_JURY\` pozostawiono ściśle **4 przejrzyste pliki**:
+    1. `00_OTWORZ_APLIKACJE_ONLINE.html` (oraz `01_URUCHOM_PROJEKT.bat`)
+    2. `02_OPIS_PROJEKTU_2_STRONY_UMK.pdf` (regulaminowe 2 strony)
+    3. `03_PREZENTACJA_I_DOKUMENTACJA_TECHNICZNA.pdf` (kompendium inżynierskie)
+    4. `04_MODEL_FINANSOWY_EXCEL.xlsx` (aktywny model finansowy DCF)
+  - Wszystkie skrypty robocze i testowe zarchiwizowane w `_archiwum_robocze\`.
+
+---
+
+## 3. Dziennik Zmian (Log Chronologiczny)
+### 2026-11-05 20:30: Wdrożenie Real-Time Live Open Data, Publikacja Online i Porządki
+1. Zbudowano i uruchomiono silnik telemetrii na żywo integrujący oficjalne API ZTP Kraków (GTFS-RT 565 pojazdów na żywo), IMGW (temperatura powietrza dla e-SORT HVAC) oraz PSE (ceny RCE).
+2. Dodano w aplikacji SCADA dynamiczny tryb `🔴 LIVE STREAM: ON` z odświeżaniem w czasie rzeczywistym oraz płynnym przełączaniem na tryb symulacji 24h.
+3. Trwale zlikwidowano błąd przeskakiwania przycisków dolnego doku (jitter) poprzez bezwzględne centrowanie w CSS oraz stałą szerokość pigułki statusu (Playwright test PASS: 0.0000px różnicy).
+4. Opublikowano projekt w chmurze na GitHub Pages pod publicznym adresem HTTPS: `https://pioale.github.io/krakow-smartgrid/` (zero localhosta).
+5. Posprzątano foldery: katalog główny oczyszczony z 25+ skryptów roboczych, w folderze `0_DLA_CIEBIE_I_JURY` pozostawiono wyłącznie 4 docelowe pliki.
+6. Zaktualizowano oficjalny opis `02_OPIS_PROJEKTU_2_STRONY_UMK.pdf` (ściśle 2 strony A4) z aktywnym linkiem do wersji online.
 
 ---
 
